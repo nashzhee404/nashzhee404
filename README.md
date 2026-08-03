@@ -1,155 +1,239 @@
-# Github Automation Tool
-![Python](https://img.shields.io/badge/language-python-blue.svg) ![Platform](https://img.shields.io/badge/platform-windows%20%7C%20macos%20%7C%20linux-lightgrey.svg)
+<div align="center">
 
-A professional, high-performance command-line interface (CLI) suite designed for comprehensive GitHub account and repository management. This tool automates complex tasks such as bulk repository creation, management of forks, gist administration, and account analytics through a standardized interactive workflow.
+# Hello, I'm Giovani 👋
 
-## Features
-- **Multi-Account Support**: Securely manage and toggle between multiple GitHub profiles stored in `settings.ini`.
-- **Universal Target Selector**: Deep-integrated selection logic offering Single, Select, Bulk, and File-based targeting for all tools. Select/Bulk always fetch and display **all** items from the GitHub API (repos, gists, starred, following, forks) or from your local machine (folders, files, git repos).
-- **Advanced Repository Logic**: Mass-toggle visibility (Public/Private), sync descriptions, manage topics, and inject licenses in bulk.
-- **Intelligent Gist Administration**: Cleanly manage Gists with filename-based displays and interactive removal.
-- **Smart Archive Filtering**: Dynamically identifies and filters repositories based on their current archived state for accurate targeting.
-- **Batch Processing**: Automated subfolder-to-repo conversion with multi-threaded performance and real-time status tracking.
-- **Automated Privacy Control**: Integrated exclusion system for files and folders ensuring sensitive data is never accidentally processed.
-- **Structured Activity Logging**: Comprehensive logs and result exports generated in the `Result/` directory for historical tracking.
-- **Custom Gitignore Integration**: Automatically generates and merges `.gitignore` patterns based on your global settings.
-- **Identity & Token Verification**: Real-time validation of GitHub Personal Access Tokens, including permission scope and rate limit monitoring.
-- **Standardized UI/UX**: Professional CLI design with consistent confirmation prompts and "Press Enter" steps for maximum readability.
-- **Native Cross-Platform Support**: Optimized for zero-dependency execution across Windows, macOS, and Linux terminal environments.
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=30&pause=1000&color=00F7FF&center=true&vCenter=true&width=800&lines=Linux+Enthusiast;Security+Researcher;CLI+Developer;Fedora+%2B+Hyprland+User;Compiler+%26+Crypto+Explorer" />
 
-## Operating System Support
-
-### Windows
-- Recommended: Python 3.10 or higher.
-- Requirements: Standard command prompt or PowerShell.
-- Note: The tool uses ANSI escape sequences for color; modern Windows terminals handle this natively.
-
-### macOS
-- Recommended: Python 3.9 or higher.
-- Requirements: Terminal.app or iTerm2.
-- Installation: Standard `pip` installation for dependencies.
-
-### Linux / Ubuntu / Debian / Unix
-- Recommended: Python 3.8 or higher.
-- Requirements: Bash or Zsh terminal.
-- Note: Ensure `python3-pip` and `python3-venv` are installed if using a virtual environment.
-
-## Installation and Requirements
-
-1. Ensure Python is installed on your system.
-2. Install the following required dependencies via your terminal:
-
-```bash
-pip install requests colorama configparser
-```
-
-## Configuration (settings.ini)
-
-The tool uses a `settings.ini` file for persistent configuration. This file is automatically created on the first run if it does not exist.
-
-### [account_NAME]
-Store multiple GitHub accounts. Each section must start with `account_` followed by a unique identifier.
-- `username`: Your GitHub username.
-- `token`: Your Personal Access Token (PAT) with `repo`, `delete_repo`, `gist`, and `user` scopes.
-
-### [gitignore]
-Manage patterns for the auto-generated `.gitignore` file during batch uploads.
-- `patterns`: A comma-separated list of file patterns to ignore (e.g., `*.exe, *.pyc, node_modules`).
-
-### [git_exceptions]
-Files or folders that should always be excluded from git operations, ensuring data privacy and script integrity.
-- `files`: Comma-separated list of individual files to ignore.
-- `folders`: Comma-separated list of directories to ignore (e.g., `.gemini`, `Result`).
-
-## Tool Categories and Features
-
-The application is divided into six logical categories for efficient navigation.
-
-### Universal Action Modes
-
-Every option that operates on a list of items uses the same **Universal Target Selector** with these modes:
-
-| Mode | What it does |
-|------|--------------|
-| `[1] Single Action` | Type one value manually (repo name, username, owner/repo, or local path). |
-| `[2] Select Action` | Fetches **ALL available items** and lets you pick specific ones by number (e.g. `1,3,5`). |
-| `[3] Bulk Action` | Fetches **ALL available items** and processes every one of them. |
-| `[4] Load from .txt` | Lists every `.txt` file on this machine (current folder + `Result/`), then loads entries line-by-line. |
-
-The item list always comes from one of two sources, and the tool **displays every item in that source** before any action runs:
-
-- **GitHub API** — options prefixed by GitHub data (repos, gists, starred, following, forks) fetch and paginate **all** matching items from the API.
-- **This Machine** — options like Batch Upload, Update, Sync Descriptions, and Create Gist scan the local filesystem and list **all** available folders/files found on the machine.
-
-Options that have no displayable item list (Check Token Info, Follows Manager views, Listing Manager export) intentionally do not offer Single/Select/Bulk, since there is nothing to list from either source.
-
-### 1. Badge & Profile
-- **Auto Badge Automation**: Automates recurring tasks related to profile badges and repository metadata.
-- **Profile Repository Manager**: Specific tools for managing your `username/username` profile README repository.
-
-### 2. Collaborations & Interactions
-- **Archive / Unarchive**: Bulk toggle the archived status of repositories to make them read-only or restore edit access.
-- **Bulk Follow / Unfollow**: Interactive management of user following. Supports manual input, selection lists, and `.txt` file bulk loading.
-- **Bulk Star / Unstar**: Mass-manage repository stars. Useful for bookmarking or cleaning up interests.
-- **Collaborator Manager**: Add or remove collaborators from your repositories in bulk.
-- **Follows Manager**: Audit your followers and following lists with direct export and management options.
-- **Manage Forks**: Identify, analyze, and delete forked repositories to keep your profile clean.
-
-### 3. Repository Management
-- **Batch Upload Subfolders**: Converts a local directory of folders into individual GitHub repositories automatically. Supports custom visibility (Public/Private) and debug logging.
-- **Bulk Delete Repositories**: Safely remove multiple repositories after verification.
-- **Change Repository Visibility**: Switch between Public and Private modes for any number of selected repositories.
-- **Clone / Backup Repositories**: Automates the backup process by cloning multiple repositories to your local machine.
-- **Delete Repository**: Single repository targeted deletion with verification.
-- **List Repositories**: View a categorized list of your repositories with visibility status.
-- **Update All Repositories**: Performs bulk metadata updates or synchronization across your repository portfolio.
-
-### 4. Repository Details Manager
-- **Branch Manager**: Mass creation or deletion of branches across selected repositories.
-- **License Manager**: Standardize legal compliance by adding or updating LICENSE files (MIT, GPL, Apache, etc.) in bulk.
-- **Sync Descriptions**: Update and synchronize repository descriptions from a standardized source.
-- **Topic Manager**: Add or remove GitHub Topics to improve repository discoverability.
-
-### 5. Others
-- **Check Token Info**: View real-time API rate limits, token scopes, and account status.
-- **Create Gist**: Quickly upload local files as Gists with custom descriptions.
-- **Remove Gist**: Clean, interactive removal of Gists by name or ID.
-- **Repository Analytics**: Analyze repositories based on size, stars, forks, and last updated timestamps.
-
-### 6. Listing
-- **Listing Manager**: Export detailed data collections (all repos, only forks, or all stars) into structured `.txt` files saved in the `Result/` directory.
-
-## Execution Example
-
-### Initializing the Tool
-```text
---- Authentication ---
-Enter Username: UserID
-Enter Token: ghp_xxxxxxxxxxxxxxxxxxxx
-OK
-Save credentials to settings.ini? (y/n): y
-```
-
-### Batch Upload Output
-```text
-Creating repository: Project-A... OK
-Uploading files...
-- file1.txt: OK
-- file2.py: OK
-Pushing to GitHub... OK
-Repository processing complete.
-
-Summary:
-Total Success: 1
-Total Failed: 0
-Duration: 12 seconds
-
-Press Enter to continue..
-```
-
-## Documentation and Logs
-- **Activity Log**: All operations are logged to `Result/activity.log`.
-- **Exported Lists**: Structured data from the Listing Manager is saved to `Result/`.
+</div>
 
 ---
-The Github Automation Tool is built for reliability. Every major action includes verification steps and clear feedback messages to ensure your account data remains safe and organized.
+
+<p align="center">
+  <img src="https://img.shields.io/badge/DARK-THEME-0d1117?style=for-the-badge&logo=github&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Linux-Advanced-black?style=for-the-badge&logo=linux"/>
+  <img src="https://img.shields.io/badge/Workflow-CLI%20-00ff99?style=for-the-badge&logo=gnubash&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Python-Compiler%20Stack-yellow?style=for-the-badge&logo=python&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Cryptography-XOR%20%7C%20RSA%20%7C%20DSA-red?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Swift-iOS%20Development-orange?style=for-the-badge&logo=swift&logoColor=white"/>
+  <img src="https://img.shields.io/badge/HTML-Markup%20Language-e34c26?style=for-the-badge&logo=html5&logoColor=white"/>
+  <img src="https://img.shields.io/badge/CSS-Styling%20Engine-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+  <img src="https://img.shields.io/badge/JavaScript-Frontend%20Logic-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+  <img src="https://img.shields.io/badge/TypeScript-Type%20Safe%20JS-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
+  <img src="https://img.shields.io/badge/React.js-Component%20UI-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
+</p>
+
+---
+
+# About Me
+
+Hello! I'm **Giovani**, a passionate coder and security enthusiast who enjoys programming, building tools, and exploring systems.
+
+I like experimenting with Linux, customizing my environment, and optimizing workflows for performance and productivity. My main setup is a **Fedora + Hyprland** environment built around a minimal, keyboard-driven workflow.
+
+I am also interested in **penetration testing and vulnerability research**, especially understanding how systems fail and how vulnerabilities appear in real-world applications.
+
+Things I enjoy doing:
+
+- Discovering vulnerabilities such as **SQL Injection (SQLi)**  
+- Finding **Cross-Site Scripting (XSS)** issues  
+- Testing **Remote Code Execution (RCE)** vectors  
+- Identifying **server misconfigurations and insecure deployments**  
+- Performing **reconnaissance and attack surface mapping**  
+- Discovering **exposed credentials and sensitive configuration files**
+
+I often search for **credentials leaks across different frameworks and technologies**, not limited to `.env` files but also various configuration files used by many frameworks and applications.
+
+For every vulnerability or issue discovered, I enjoy writing **clear technical reports explaining the impact and reproduction steps**.
+
+Most of my workflow relies on **custom-built tools** that I develop myself for recon, scanning, and vulnerability discovery.
+
+---
+
+# Operating System Experience
+
+I work with multiple operating systems depending on the project or experiment.
+
+- **Fedora (Primary)** – main OS for development and security research  
+- **Arch Linux** – experimentation and learning system internals  
+- **Kali Linux** – security labs and pentesting environments  
+- **Windows** – RDP testing and deployment tasks  
+- **VM Labs** – isolated environments for exploit testing and experiments  
+
+### Preferred Setup
+
+**Fedora + Hyprland** — minimal, customized, and optimized for speed.
+
+---
+
+# Technologies I Use
+
+### Programming & Scripting
+
+- Python  
+- Bash  
+- JavaScript / TypeScript  
+- HTML / CSS  
+- React.js  
+- Swift  
+
+### Tools & Platforms
+
+- CLI-first development  
+- Docker  
+- Git / GitHub  
+- Pastebin  
+- Custom terminal environments  
+- System optimization and performance tuning  
+
+---
+
+# Security Research & Pentesting
+
+I enjoy exploring how applications and systems behave under security testing.
+
+### Focus Areas
+
+- Web Application Security  
+- Vulnerability Discovery  
+- Reconnaissance & Enumeration  
+- Exploit Experiments  
+- Misconfiguration Analysis  
+- Credential Exposure Discovery  
+
+### Common Vulnerabilities I Test
+
+- SQL Injection (SQLi)  
+- Cross-Site Scripting (XSS)  
+- Remote Code Execution (RCE)  
+- Authentication / Authorization Issues  
+- Server Misconfigurations  
+- Sensitive File Exposure  
+
+### Credential Discovery
+
+One area I enjoy researching is **exposed credentials in web applications**.
+
+This includes searching for sensitive configuration files used by various frameworks and technologies, such as:
+
+- `.env` files  
+- framework configuration files  
+- backup files  
+- environment variables  
+- API keys and tokens  
+- database credentials  
+- cloud service credentials  
+
+### Workflow
+
+1. Reconnaissance and target mapping  
+2. Manual testing and fuzzing  
+3. Vulnerability discovery  
+4. Exploit validation  
+5. Writing detailed vulnerability reports  
+
+Many parts of this process rely on **custom CLI tools that I build myself**.
+
+---
+
+# Python Compilation & Code Protection
+
+I enjoy experimenting with **Python compilation and code protection**, combining learning and practical use.
+
+Tools I frequently use:
+
+- **PyArmor** – Python code obfuscation  
+- **Nuitka** – compiling Python scripts into binaries  
+- **Cython** – compiling Python into C extensions  
+
+Typical workflow:
+
+1. Develop Python scripts  
+2. Optimize code structure  
+3. Compile or obfuscate scripts  
+4. Deploy or share via GitHub / Pastebin  
+
+---
+
+# Cryptography & Security Experiments
+
+I explore **practical cryptography** and lightweight encryption methods for learning and experimentation.
+
+Algorithms I experiment with:
+
+- **XOR Encryption** – simple obfuscation techniques  
+- **RSA** – public/private key encryption  
+- **DSA** – digital signatures and verification  
+
+Projects I enjoy building:
+
+- CLI encryption tools  
+- payload encoding/decoding utilities  
+- secure script distribution tools  
+- code protection experiments  
+
+---
+
+# Hosting & Development Environment
+
+- **GitHub** – project hosting and version control  
+- **Pastebin** – quick code sharing  
+- **Docker** – containerized environments  
+- **Netlify / Vercel** – web deployments  
+- **Windows RDP** – remote development/testing  
+- **Local VMs** – sandboxed testing labs  
+
+---
+
+# Contribution Streak
+
+<div align="center">
+
+![GitHub Streak](https://streak-stats.demolab.com?user=nashzhee404&theme=tokyonight&hide_border=true)
+
+</div>
+
+---
+
+# Community & Open Source
+
+I enjoy learning from the open-source community and experimenting with new tools and technologies.
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Open%20Source-Enthusiast-brightgreen?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Linux-Custom%20Environment-black?style=for-the-badge&logo=linux"/>
+  <img src="https://img.shields.io/badge/CLI-Workflow-blue?style=for-the-badge"/>
+</p>
+
+---
+
+# Favorite Quote
+
+> "F*** you, Microsoft."  
+> — Linus Torvalds
+
+---
+
+# Contact
+
+Email: [test@mail.ru](mailto:test@mail.ru)  
+Telegram: [@test](https://t.me/test)
+
+---
+
+# Fun Facts
+
+- I build most of my tools as **CLI-first utilities**  
+- I enjoy **finding vulnerabilities and documenting them**  
+- Minimal environments help me stay focused  
+- I prefer **custom tools over heavy frameworks**  
+
+---
+
+<div align="center">
+
+![Profile Views](https://komarev.com/ghpvc/?username=nashzhee404&color=00ffaa&style=flat-square)
+
+**Customized without limits**
+
+</div>
+
