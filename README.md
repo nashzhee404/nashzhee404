@@ -1,375 +1,323 @@
-# GitHub Automation Tool
+<div align="center">
 
-![Python](https://img.shields.io/badge/Python-3.13-blue)
-![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey)
+# Hello, I'm Giovani 👋
 
-## Description
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=30&pause=1000&color=00F7FF&center=true&vCenter=true&width=800&lines=Linux+Enthusiast;Security+Researcher;CLI+Developer;Kali+Linux+Daily+Driver;Compiler+%26+Crypto+Explorer" />
 
-GitHub Automation Tool is a single-file, interactive command-line application for batch-managing one or more GitHub accounts. It automates repository creation, bulk deletion, visibility toggling, archiving, cloning, gist administration, branch and topic management, license injection, follow/star operations, badge automation, and portfolio listing. Every selection-driven action fetches the full candidate list from GitHub and shows it on screen before you choose, and every workflow runs identically on Windows, macOS, and Linux.
+</div>
 
-## Features
+---
 
-- Multi-Account Support: store unlimited GitHub accounts in `settings.ini` and switch between them at startup.
-- Universal Target Selector: every selection action (Single, Select, All, Load from .txt) fetches and displays all candidates before you choose.
-- Batch Upload Subfolders: converts each subfolder of a directory into its own repository with git init, commit, push, and secret-detection auto-fix.
-- Bulk Repository Management: delete, change visibility, archive/unarchive, clone/backup, and list repositories in bulk.
-- Repository Details: branch deletion, license injection (MIT, Apache-2.0, GPLv3), topic add/remove/overwrite, and description sync from local files.
-- Gist Administration: create gists from local files and remove gists (paginated fetch shows every gist).
-- Follow and Star Management: bulk follow/unfollow and star/unstar with .txt bulk loading.
-- Badge Automation: automates YOLO, Quickdraw, Pull Shark, and Pair Extraordinaire achievements with a Run Once / Auto Repeat flow (choose the repository first, then repeat N times); Pair commits use the real `voidbit404` account as co-author.
-- Network Safety: every GitHub API call carries a 30-second timeout, so a stalled connection can never hang the tool.
-- Credential Safety: git authentication tokens are used only transiently; after every push or clone the local `origin` remote is restored to a clean, token-free URL, and token values are redacted from printed git error messages so they can never leak into the terminal or git config.
-- Timeout Protection: every git subprocess call has a 300-second timeout with explicit error reporting; git is never executed through a shell (`shell=False`), removing command-injection risk on all platforms, including Windows.
-- Pagination Safeguards: all list fetchers (repos, gists, followers, following, starred) cap pagination defensively so a malformed API response cannot trigger an infinite loop.
-- Visibility Markers: every repository shown in any repo-related option, sub-option, or section is marked `[PRIVATE]` or `[PUBLIC]`, so you always know each repo's status before acting on it.
-- Runtime Banner: the startup banner displays the tool title plus the detected OS version and Python version (auto-detected at runtime, never hardcoded).
-- Listing and Analytics: export repositories, forks, and starred repos; sort and analyze repository statistics.
-- Activity Logging: every major operation is recorded to `Result/activity.log`.
-- Custom Gitignore Integration: auto-generates `.gitignore` files from patterns configured in `settings.ini`.
-- Automated Privacy Control: `[git_exceptions]` keeps sensitive files and folders out of git tracking.
-- Token Verification: validates tokens, checks `repo`/`public_repo` scopes, and monitors rate limits.
-- Cross-Platform: pure Python with ANSI color fallbacks; explicitly handles Windows, macOS, and Linux paths and git execution.
+<p align="center">
+  <img src="https://img.shields.io/badge/DARK-THEME-0d1117?style=for-the-badge&logo=github&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Linux-Advanced-black?style=for-the-badge&logo=linux"/>
+  <img src="https://img.shields.io/badge/Workflow-CLI%20-00ff99?style=for-the-badge&logo=gnubash&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Python-Compiler%20Stack-yellow?style=for-the-badge&logo=python&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Cryptography-XOR%20%7C%20RSA%20%7C%20DSA-red?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Swift-iOS%20Development-orange?style=for-the-badge&logo=swift&logoColor=white"/>
+  <img src="https://img.shields.io/badge/HTML-Markup%20Language-e34c26?style=for-the-badge&logo=html5&logoColor=white"/>
+  <img src="https://img.shields.io/badge/CSS-Styling%20Engine-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+  <img src="https://img.shields.io/badge/JavaScript-Frontend%20Logic-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+  <img src="https://img.shields.io/badge/TypeScript-Type%20Safe%20JS-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
+  <img src="https://img.shields.io/badge/React.js-Component%20UI-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
+  <img src="https://img.shields.io/badge/Next.js-Full%20Stack-black?style=for-the-badge&logo=next.js&logoColor=white"/>
+</p>
 
-## How to Use
+---
 
-### Installation
+# About Me
 
-Requirements:
+Hello! I'm **Giovani**, a passionate coder and security enthusiast who enjoys programming, building tools, and exploring systems.
 
-- Python 3.8 or newer (developed and verified on Python 3.13).
-- Git installed and available on `PATH` (required for batch upload, clone/backup, and update flows).
-- A GitHub Personal Access Token (PAT) with `repo` (and optionally `delete_repo`, `gist`, `user`) scopes.
+I like experimenting with Linux, customizing my environment, and optimizing workflows for performance and productivity. My main setup is **Kali Linux (custom)** for all activity — minimal, keyboard-driven, and optimized for speed.
 
-Install the Python dependencies:
+I build **100+ CLI-first tools** — mostly in **Python, Go, and Bash** — designed to be **cross-platform (Windows / macOS / Linux)**, **multi-threaded**, and **low on CPU and memory**.
 
-```bash
-pip install requests colorama
-```
+I am also interested in **penetration testing and vulnerability research**, especially understanding how systems fail and how vulnerabilities appear in real-world applications.
 
-`colorama` is optional; the tool falls back to raw ANSI escape codes if it is not installed. `configparser` is part of the Python standard library.
+Things I enjoy doing:
 
-### Run
+- Discovering vulnerabilities such as **SQL Injection (SQLi)**  
+- Finding **Cross-Site Scripting (XSS)** issues  
+- Testing **Remote Code Execution (RCE)** vectors  
+- Testing **SSRF, XXE, SSTI, LFI / RFI, and Path Traversal**  
+- Testing **IDOR, NoSQL Injection, and Auth issues**  
+- Identifying **server misconfigurations and insecure deployments**  
+- Performing **reconnaissance and attack surface mapping**  
+- Enumerating **subdomains, reverse IPs, DNS, WHOIS, and tech stacks**  
+- Conducting **OSINT and metadata forensics**  
+- Discovering **exposed credentials and sensitive configuration files**  
+- Building **CLI automation for GitHub, Telegram, Docker, and system ops**
 
-```bash
-python run.py
-```
+I often search for **credentials leaks across different frameworks and technologies**, not limited to `.env` files but also hosting panels, network protocols, and various configuration files used by many frameworks and applications.
 
-On Linux and macOS use `python3 run.py` in shell environments where `python` is not mapped.
+For every vulnerability or issue discovered, I enjoy writing **clear technical reports explaining the impact and reproduction steps** — PoC files, request / response evidence, remediation guidance, and structured JSON / HTML / TXT logs.
 
-| Operating System | Command | Terminal |
-| :--- | :--- | :--- |
-| Windows | `python run.py` | Command Prompt, PowerShell, Windows Terminal |
-| macOS | `python3 run.py` | Terminal.app, iTerm2 |
-| Ubuntu / Debian / Linux | `python3 run.py` | Bash, Zsh |
+Most of my workflow relies on **custom-built tools** that I develop myself for recon, scanning, vulnerability discovery, OSINT, automation, and system optimization.
 
-### Authentication Flow
+---
 
-1. On startup the banner shows the tool title, the detected OS version, and the running Python version, then lists the saved accounts from `settings.ini` (e.g. `[1] user1`, `[2] user2`).
-2. Enter the account number to log in, or `0` to add a new account.
-3. For a new account, enter the GitHub username and Personal Access Token. The tool verifies the pair against the GitHub API and optionally saves it to `settings.ini`.
-4. The main menu appears with the signed-in user and live account statistics (repos, stars, followers, badges).
+# What I Build
 
-### Universal Target Selection
+A quick map of my recent projects, grouped by what they actually do.
 
-Most management options reuse the same selection prompt. Every mode fetches the complete candidate list first and displays it, so you always see everything available. Repository items are always marked with their visibility status, e.g. `[3] DevAgent-Setup-CLI [PRIVATE]` or `[2] nashzhee404 [PUBLIC]`, in every repo-related option, sub-option, and section.
+### Security & Vulnerability Labs
 
-- `[1] Single Action`: the full list is shown, then you type one value or the list number of the item to target.
-- `[2] Select Action`: the full list is shown, then you enter comma-separated numbers (e.g. `1,3,5`) to target multiple items.
-- `[3] All Action`: the full list is shown and every listed item is selected; the selected items are re-printed as a numbered list.
-- `[4] Load from .txt` (where available): reads one target per line from a UTF-8 text file and displays the loaded entries.
+- Scanners for **SQLi, XSS, SSRF, XXE, SSTI, LFI / RFI, Traversal, IDOR, and NoSQLi** with validation, confidence scoring, and WAF awareness  
+- `.env` and sensitive-file hunters with real-time progress and categorized `Result/` output  
+- Traffic interception proxies and header / misconfiguration checkers for manual testing  
+- VPS anomaly monitors with process forensics, GeoIP, and Telegram forensic alerts  
 
-## Menu Options Reference
+### Recon, OSINT & Network
 
-The main menu groups 24 options into six categories. `[0]` exits the application.
+- Target profilers: **ports, Cloudflare / WAF detection, real-IP discovery, DNS, WHOIS, SSL, CMS / framework fingerprinting**  
+- Subdomain and reverse-IP enumeration with multi-source OSINT, dedup, and retry logic  
+- Username search across dozens of platforms plus file-metadata forensics (EXIF / GPS, Office, PDF, media tags)  
+- Network mapping with ARP / ICMP sweeps, WiFi and CCTV discovery, latency / speed tracking  
 
-### Category 1: Badge and Profile
+### Automation, GitHub & Data
 
-#### [1] Auto Badge Automation
+- GitHub managers for **repos, branches, gists, followers, stars, topics, and bulk archive / clone / delete flows**  
+- Pastebin / Gist / Mega.nz sync, upload-history tracking, and credential managers with connection checks  
+- Raw-data to JSON converters, README to caption / JSON / HTML catalog pipelines served via `raw.githubusercontent.com`  
+- File and archive ops: merge / split TXT, prefix lines, dummy CSV / SQL generation, ZIP / TAR / GZ extraction, OCR with Tesseract  
 
-Shows the earned/status of each achievement badge, then runs automation flows.
+### System, Docker & Terminal
 
-Badges displayed: YOLO, Quickdraw, Pull Shark, Pair Extraordinaire (automated); Starstruck, Galaxy Brain (helper/manual); Public Sponsor, Heart on Your Sleeve (manual); Arctic Code Vault, Mars 2020 (legacy).
+- Cleaners for **package caches, logs, temp files, browser cache, Docker prune, journals, and old kernels** with dry-run and per-category reports  
+- Hardening scripts with **SSH, Fail2Ban, WireGuard, UFW, sysctl, backups, and rollback**  
+- Docker managers (containers / images / volumes / networks / compose) plus desktop GUI and headless web modes  
+- Terminal setup engines (Zsh / Oh My Zsh / Powerlevel10k) and Python env managers with per-tool venvs and requirements auto-fix  
 
-Run-mode sub-options (asked first, in the badge screen):
+### Media, Telegram & Privacy
 
-- `[1]` Run Once: execute the selected badge action 1 time.
-- `[2]` Auto Repeat: enter a total repeat count (e.g. `5`), and the auto-repeater runs the badge action that many times.
-- `[0]` Back.
+- Screen capture and recording with **FFmpeg**, batch screenshot flows, silent RAM-only daemons, and idle-triggered captures  
+- Video editing, GIF background removal, Drive downloads, and YouTube playlist / channel extraction  
+- Telegram delivery with **multi-bot support, album grouping, anti-flood pacing, retries, and README-derived captions**  
+- Proxy rotation / scraping and **Tor circuit rotation with Standard and Full-Anonymity iptables modes**  
 
-After choosing a run mode, the flow always asks you to **select the repository/repositories first** (Single / Select / All, full list displayed), then asks which badge(s) to run (numbers like `1,4` or `A` for ALL automated badges). The repeater then executes every selected badge on every selected repository, prints a per-run summary, and re-checks the profile afterward.
+---
 
-Workflow chain: badge status is scraped from the public profile, the repository is chosen first, then the badge actions run (every selected repo x every cycle x every badge), a summary is printed, and the profile is re-checked afterward.
+# Operating System Experience
+
+I work with multiple operating systems depending on the project or experiment.
+
+- **Kali Linux (Custom, Primary)** – main OS for all activity, development and security research  
+- **Fedora** – secondary OS with Hyprland setup  
+- **Arch Linux** – experimentation and learning system internals  
+- **Windows** – RDP testing and deployment tasks  
+- **VM Labs** – isolated environments for exploit testing and experiments  
+
+### Preferred Setup
+
+- **Kali Linux (Custom)** — minimal, customized, and optimized for all daily activity  
+- **Fedora + Hyprland** — secondary minimal setup
+
+---
+
+# Technologies I Use
+
+### Programming & Scripting
+
+- Python  
+- Bash  
+- Go  
+- Batch (.bat for Windows provisioning)  
+- JavaScript / TypeScript  
+- HTML / CSS  
+- React.js  
+- Next.js  
+- Swift  
+
+### Tools & Platforms
+
+- CLI-first development  
+- Multi-threaded ThreadPool / goroutine engines  
+- Docker  
+- Git / GitHub  
+- GitHub Gists / API automation  
+- Pastebin  
+- Telegram Bot API  
+- FFmpeg media processing  
+- Tesseract OCR  
+- Tor / proxy networking  
+- PyQt6 / PySide6 desktop apps  
+- Flask + Tailwind for headless web modes  
+- Custom terminal environments  
+- System optimization and performance tuning  
 
-Automated badge actions:
+---
 
-- YOLO: creates a patch file, opens a branch, opens a PR, requests a reviewer, then merges the PR.
-- Quickdraw: opens an issue and immediately closes it.
-- Pull Shark: repeats the YOLO flow N times to merge multiple PRs.
-- Pair Extraordinaire: commits with a real `Co-authored-by` trailer on a branch and merges the PR. The co-author is the saved GitHub account `voidbit404` (id `259850816`), not a bot account, so the merged commit genuinely lists a second account as co-author.
+# Security Research & Pentesting
 
-Helper tools: Starstruck Helper (creates a star-exchange friendly repo), Galaxy Brain Helper (lists popular discussion hubs).
+I enjoy exploring how applications and systems behave under security testing — from first recon to validated PoC.
 
-#### [2] Profile Repository Manager
+### Focus Areas
 
-Manages the special `username/username` profile repository.
+- Web Application Security  
+- Vulnerability Discovery  
+- Reconnaissance & Enumeration  
+- Subdomain & Reverse IP Enumeration  
+- Technology Fingerprinting  
+- OSINT & Metadata Forensics  
+- Username & Credential Intelligence  
+- Network Security & Discovery  
+- Exploit Experiments  
+- Misconfiguration Analysis  
+- Credential Exposure Discovery  
 
-- If the profile repo does not exist: `[1]` Create Profile Repository, `[0]` Back.
-- If it exists: `[1]` Edit Profile README.md, `[2]` Delete Profile Repository, `[0]` Back.
+### Common Vulnerabilities I Test
 
-README edit sub-options:
+- SQL Injection (SQLi)  
+- Cross-Site Scripting (XSS)  
+- Remote Code Execution (RCE)  
+- SSRF / XXE / SSTI  
+- LFI / RFI / Directory Traversal  
+- IDOR / NoSQL Injection  
+- Authentication / Authorization Issues  
+- Server Misconfigurations  
+- Security Misconfigurations  
+- Sensitive File Exposure  
 
-- `[1]` Edit Manually: shows the current README, accepts multi-line input, finish by typing `END` on a new line.
-- `[2]` Upload from Local File: lists `.md` files in the current directory, pick one by number or name.
+### Credential Discovery
 
-Deletion requires typing the account username to confirm.
+One area I enjoy researching is **exposed credentials in web applications**.
 
-### Category 2: Collaborations and Interactions
+This includes searching for sensitive configuration files used by various frameworks and technologies, such as:
 
-#### [3] Archive / Unarchive
+- `.env` files  
+- framework configuration files  
+- hosting panels (WHM / cPanel / Plesk / DirectAdmin)  
+- network protocols (FTP / SFTP / SSH / SMTP)  
+- backup files  
+- environment variables  
+- API keys and tokens  
+- database credentials  
+- cloud service credentials  
 
-Sub-options:
+### Workflow
 
-- `[1]` Archive Repository: shows only non-archived repositories; makes them read-only.
-- `[2]` Unarchive Repository: shows only archived repositories; restores edit access.
+1. Reconnaissance and target mapping  
+2. Subdomain / tech-stack fingerprinting and OSINT  
+3. Manual testing and fuzzing  
+4. Vulnerability discovery with re-validation  
+5. Credential and sensitive-file exposure checks  
+6. Exploit validation with evidence capture  
+7. Writing detailed vulnerability reports  
 
-Then target selection via Single/Select/All.
+Many parts of this process rely on **custom CLI tools that I build myself** — bulk scanners, wordlist-driven fuzzers, grid-based result views, and auto-saved evidence folders.
 
-#### [4] Bulk Follow / Unfollow
+---
 
-Sub-options:
+# Python Compilation & Code Protection
 
-- `[1]` Follow User(s): manual or `.txt` targets.
-- `[2]` Unfollow User(s): fetches your current following list as candidates.
+I enjoy experimenting with **Python compilation and code protection**, combining learning and practical use — from building to breaking.
 
-Then target selection via Single/Select/All/.txt.
+Tools I frequently use:
 
-#### [5] Bulk Star / Unstar
+- **PyArmor** – Python code obfuscation  
+- **Nuitka** – compiling Python scripts into binaries  
+- **Cython** – compiling Python into C extensions  
+- **PyInstaller** – packaging scripts as standalone executables  
+- **License pipelines** – RSA / DSA tiers with anti-tamper and kill-switch handling  
+- **Deobfuscation lab** – Fernet / base64 / marshal unwrapping and PyInstaller bundle reversal without executing payloads  
 
-Sub-options:
+Typical workflow:
 
-- `[1]` Star Repositories: manual or `.txt` targets in `owner/repo` or full URL format.
-- `[2]` Unstar Repositories: fetches your current starred repositories as candidates.
+1. Develop Python scripts  
+2. Optimize code structure  
+3. Compile or obfuscate scripts  
+4. Inject and verify licenses  
+5. Deploy or share via GitHub / Pastebin  
 
-Then target selection via Single/Select/All/.txt.
+---
 
-#### [6] Collaborator Manager
+# Cryptography & Security Experiments
 
-Sub-options:
+I explore **practical cryptography** and lightweight encryption methods for learning and experimentation.
 
-- `[1]` Add Collaborator.
-- `[2]` Remove Collaborator.
+Algorithms I experiment with:
 
-Workflow chain: select repositories (Single/Select/All), then enter the collaborator's GitHub username; the action is applied to every selected repo.
+- **XOR Encryption** – simple obfuscation techniques  
+- **RSA** – public/private key encryption  
+- **DSA** – digital signatures and verification  
 
-#### [7] Follows Manager
+Projects I enjoy building:
 
-Sub-options:
+- CLI encryption tools  
+- payload encoding/decoding utilities  
+- secure script distribution tools  
+- license signing, injection, and revocation flows  
+- HTML AES-256-GCM protection experiments  
+- code protection experiments  
 
-- `[1]` View Following List: prints every user you follow and exports to `Result/Following.txt`.
-- `[2]` View Followers List: prints every follower and exports to `Result/Followers.txt`.
-- `[3]` Follow users from .txt: one username per line.
-- `[4]` Unfollow users from .txt: one username per line.
-- `[0]` Back.
+---
 
-#### [8] Manage Forks
+# Hosting & Development Environment
 
-Sub-options:
+- **GitHub** – project hosting and version control  
+- **GitHub Gists** – small code and data sharing  
+- **Pastebin** – quick code sharing  
+- **Mega.nz** – bulk data and asset sync  
+- **Telegram** – reports, alerts, and file delivery  
+- **Docker** – containerized environments  
+- **Netlify / Vercel** – web deployments  
+- **Windows RDP** – remote development/testing  
+- **Local VMs** – sandboxed testing labs  
 
-- `[1]` Fork Repository: targets are `owner/repo` or full `https://github.com/owner/repo` values (manual or `.txt`); each is forked to your account via the API.
-- `[2]` Delete Fork (Repository): identical flow to option `[13]` Delete Repository.
+---
 
-### Category 3: Repository Management
+# Contribution Streak
 
-#### [9] Batch Upload Subfolders
+<div align="center">
 
-Workflow chain (per subfolder):
+![GitHub Streak](https://streak-stats.demolab.com?user=nashzhee404&theme=tokyonight&hide_border=true)
 
-1. Enter the absolute path to a directory that contains project subfolders.
-2. Choose global visibility: `[1]` Public, `[2]` Private, `[3]` Ask for each repository.
-3. Choose upload mode: `[1]` Normal Upload (preserves existing local history), `[2]` Fresh Upload (removes `.git` and force-pushes).
-4. Choose debug output: `y` shows git hints/warnings, `n` suppresses them.
-5. Each subfolder name is sanitized into a repository name; a `.gitignore` is generated from `settings.ini`; repository description is taken from the first line of a local `README.md` if present.
-6. If the repository already exists you may: `[1]` Rename and Retry, `[2]` Update existing repository (force push latest version), `[3]` Skip this folder.
-7. Git identity is set per-repo, files are committed, and the branch is pushed to `main`.
-8. Push results are summarized (successful/failed counts). GitHub secret-detection blocks trigger an automatic fix: blocked files are added to `.gitignore`, history is rewritten, and the push is retried with `--force`.
-9. After a successful push, the local `origin` remote is restored to the clean HTTPS URL (no token embedded), so the token is never persisted in `.git/config`.
+</div>
 
-#### [10] Bulk Delete Repositories
+---
 
-Same workflow as `[13]` Delete Repository (below), provided as a dedicated bulk entry.
+# Community & Open Source
 
-#### [11] Change Repository Visibility
+I enjoy learning from the open-source community and experimenting with new tools and technologies.
 
-Sub-options:
+<p align="center">
+  <img src="https://img.shields.io/badge/Open%20Source-Enthusiast-brightgreen?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Linux-Custom%20Environment-black?style=for-the-badge&logo=linux"/>
+  <img src="https://img.shields.io/badge/CLI-Workflow-blue?style=for-the-badge"/>
+</p>
 
-- `[1]` Make Private.
-- `[2]` Make Public.
+---
 
-Then target selection via Single/Select/All; every selected repo is updated via the PATCH API.
+# Favorite Quote
 
-#### [12] Clone / Backup Repositories
+> "F*** you, Microsoft."  
+> — Linus Torvalds
 
-Target selection via Single/Select/All (full repo objects, so clone URLs are known). All selected repositories are cloned with authenticated URLs into a timestamped folder `Github_Backup_YYYYMMDD_HHMMSS/` created in the current working directory. After each clone the local `origin` remote is restored to the clean HTTPS URL, so the token never persists in `.git/config`.
+---
 
-#### [13] Delete Repository
+# Contact
 
-Workflow chain: target selection via Single/Select/All, a PERMANENT DELETION WARNING is printed with the full list, then a simple `(y/n)` confirmation (no text to type); confirmed repositories are deleted via the API and a summary is printed. This is the same flow used by `[10]` and by `[8]` Delete Fork.
+Email: [test@mail.ru](mailto:test@mail.ru)  
+Telegram: [@test](https://t.me/test)
 
-#### [14] List Repositories
+---
 
-Target selection via Single/Select/All; for each repository prints name, visibility, description, stars, forks, and URL. In Single mode, typing a repository name (instead of a list number) resolves it to full details automatically (matched against the fetched list, with an API fallback for repos outside the list). The list is also saved to `Result/Repository.txt`.
+# Fun Facts
 
-#### [15] Update All Repositories
+- I build most of my tools as **CLI-first utilities**  
+- I focus on **multi-threaded, low-resource, cross-platform design**  
+- I enjoy **finding vulnerabilities and documenting them**  
+- I like **silent background modes, scheduled reports, and Telegram delivery** for long runs  
+- Minimal environments help me stay focused  
+- I prefer **custom tools over heavy frameworks**  
 
-Updates local git repositories (folders in the current directory that contain `.git`).
+---
 
-Sub-options:
+<div align="center">
 
-- `[1]` Normal Pull: merges remote changes.
-- `[2]` Force Pull: `git fetch` then `git reset --hard origin/<default branch>` (the default branch, `main` or `master`, is detected per repository, so neither is hardcoded); warns and asks `(y/n)` before discarding local changes.
+![Profile Views](https://komarev.com/ghpvc/?username=nashzhee404&color=00ffaa&style=flat-square)
 
-Then target selection via Single/Select/All, and a summary is printed.
+**Customized without limits**
 
-### Category 4: Repository Details Manager
-
-#### [16] Branch Manager
-
-Sub-options:
-
-- `[D]` Delete a branch: enter the exact branch name, then confirm with `(y/n)`. The `main` and `master` branches are blocked by design. The branch is deleted from every selected repo (Single/Select/All) via the git refs API.
-
-#### [17] License Manager
-
-Sub-options:
-
-- `[1]` MIT License.
-- `[2]` Apache License 2.0.
-- `[3]` GPLv3.
-
-Workflow chain: select repositories (Single/Select/All), then the license text (with current year and your username embedded) is written to `LICENSE` in each repo via the Contents API.
-
-#### [18] Sync Descriptions
-
-Target selection via Single/Select/All of local git repositories. If a repo folder contains `description.txt`, its content is read and PATCHed as the repository's GitHub description.
-
-#### [19] Topic Manager
-
-Sub-options:
-
-- `[1]` Add Tag(s): merges the entered tags with current topics.
-- `[2]` Remove Tag(s): removes the entered tags from current topics.
-- `[3]` Overwrite All Tags: replaces every current topic with the entered tags.
-
-Workflow chain: select repositories (Single/Select/All), enter comma-separated tags, and each repo's current topics are fetched, transformed, and pushed back via the Topics API.
-
-### Category 5: Others
-
-#### [20] Check Token Info
-
-Prints the authenticated username, remaining core rate limit, total limit, and the reset time.
-
-#### [21] Create Gist
-
-Workflow chain: the current directory's files are listed and selected via Single/Select/All; enter one description for all gists and choose public/private (`y/n`); each selected file is uploaded as its own gist and its URL is printed.
-
-#### [22] Remove Gist
-
-Workflow chain: every gist is fetched with pagination and displayed as `first-filename - description`; select via Single/Select/All; a warning with the full list is shown; confirm with `(y/n)` and the gists are deleted via the API.
-
-#### [23] Repository Analytics
-
-Workflow chain: select repositories (Single/Select/All; full objects or names/URLs are resolved), then sort by:
-
-- `[1]` Stars.
-- `[2]` Forks.
-- `[3]` Size (Large to Small, shown in MB).
-
-The top 50 repositories are printed with the selected metric.
-
-### Category 6: Listing
-
-#### [24] Listing Manager
-
-Sub-options (data source):
-
-- `[1]` List All Repositories (tagged `[PUBLIC]` or `[PRIVATE]`).
-- `[2]` List All Forks (tagged `[PUBLIC]` or `[PRIVATE]`).
-- `[3]` List All Starred.
-
-Output format:
-
-- `[1]` Name only.
-- `[2]` Full URL.
-
-The complete dataset is printed and saved to `Result/Repositories.txt`, `Result/Forks.txt`, or `Result/Starred.txt` depending on the source.
-
-## Output / Results
-
-All generated artifacts are written relative to the application's working directory:
-
-```
-Result/
-|-- activity.log        # timestamped log of every operation (created on first use)
-|-- Repository.txt      # URLs/names from [14] List Repositories
-|-- Following.txt       # followed users from [7] Follows Manager
-|-- Followers.txt       # followers from [7] Follows Manager
-|-- Repositories.txt    # listing output from [24] Listing Manager
-|-- Forks.txt           # fork listing from [24] Listing Manager
-`-- Starred.txt         # starred listing from [24] Listing Manager
-
-Github_Backup_YYYYMMDD_HHMMSS/   # clone/backup folder from [12]
-```
-
-## Configuration (settings.ini)
-
-`settings.ini` is created automatically on first run and stores three sections. All files are read and written as UTF-8 for cross-platform safety.
-
-### [account_NAME]
-
-One section per saved account, where `NAME` is the GitHub username.
-
-```ini
-[account_youruser]
-token = ghp_your_personal_access_token
-```
-
-### [gitignore]
-
-Newline-separated glob patterns that the tool writes into the `.gitignore` of every repository it uploads.
-
-```ini
-[gitignore]
-patterns = __pycache__/
-    *.pyc
-    *.log
-    .env
-    .DS_Store
-    Result/
-    Output/
-```
-
-### [git_exceptions]
-
-Additional files and folders that must never enter git tracking (privacy protection). Each entry goes on its own line.
-
-```ini
-[git_exceptions]
-files = secrets.txt
-folders = .gemini
-```
-
-A one-time automatic migration imports legacy `config.json` accounts into `settings.ini` and renames the old file to `config.json.bak`.
-
-## Project Structure
-
-```
-Github Automation Tool/          # project root
-|-- run.py                       # main application (single-file CLI, 3079 lines)
-|-- settings.ini                 # accounts, gitignore patterns, git exceptions
-|-- README.md                    # this documentation
-`-- Result/                      # created at runtime: activity.log + exported lists
-```
-
-## License
-
-A `LICENSE` file is not bundled with this project. The application can generate MIT, Apache-2.0, and GPLv3 license files for your repositories through option `[17]` License Manager; the year 2026 and the signed-in username are embedded in the generated text.
+</div>
