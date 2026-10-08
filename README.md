@@ -61,7 +61,6 @@ I created more than 150 CLI programs. Most use Python, Go, and Bash. They use lo
 - Python
 - Bash
 - Go
-- Batch for Windows provisioning
 - JavaScript / TypeScript
 - HTML / CSS
 - React.js, Next.js
@@ -162,6 +161,8 @@ GitHub for code, Gists for snippets, Pastebin for quick shares, Mega.nz for bulk
 ## Contact
 
 - GitHub: [nashzhee404](https://github.com/nashzhee404)
+- Email: [contact@pentestdev.com](mailto:contact@pentestdev.com)
+- Telegram: [pentestdev](https://t.me/pentestdev)
 
 For testing requests, include scope, authorization, and objective. I only test within authorized scope.
 
