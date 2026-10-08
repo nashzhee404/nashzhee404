@@ -1,273 +1,155 @@
 <div align="center">
 
-# Hello, I'm Giovani 👋
+# Hello, I'm Giovani
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=30&pause=1000&color=00F7FF&center=true&vCenter=true&width=800&lines=Linux+Enthusiast;Security+Researcher;CLI+Developer;Kali+Linux+Daily+Driver;Compiler+%26+Crypto+Explorer" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=30&pause=1000&color=00F7FF&center=true&vCenter=true&width=800&lines=Web+App+Pentesting;Software+Developer;Web+Developer;CLI+Development;Exploit+Development;System+%26+Server+Management" alt="Typing intro" />
+
+Penetration tester and software developer with 6+ years across web app pentesting, development, CLI development, exploit development, and server management.
+
+<p>
+  <img src="https://img.shields.io/badge/Python-Compiler%20Stack-yellow?style=for-the-badge&logo=python&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Go-CLI%20Builds-00ADD8?style=for-the-badge&logo=go&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Bash-CLI%20Builds-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white"/>
+  <img src="https://img.shields.io/badge/CLI-Cross%20Platform-00ff99?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Swift-Mac%20Apps-orange?style=for-the-badge&logo=swift&logoColor=white"/>
+  <img src="https://img.shields.io/badge/macOS-Specific%20Builds-000000?style=for-the-badge&logo=apple&logoColor=white"/>
+  <img src="https://img.shields.io/badge/JavaScript-Frontend%20Logic-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+  <img src="https://img.shields.io/badge/TypeScript-Type%20Safe%20JS-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
+  <img src="https://img.shields.io/badge/HTML-Markup%20Language-e34c26?style=for-the-badge&logo=html5&logoColor=white"/>
+  <img src="https://img.shields.io/badge/CSS-Styling%20Engine-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+  <img src="https://img.shields.io/badge/React.js-Component%20UI-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
+  <img src="https://img.shields.io/badge/Next.js-Full%20Stack-black?style=for-the-badge&logo=next.js&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Linux-Advanced-black?style=for-the-badge&logo=linux&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Windows-RDP%20%26%20Deploy-0078D4?style=for-the-badge&logo=windows&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Docker-Isolated%20Runs-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Cryptography-XOR%20%7C%20RSA%20%7C%20DSA-red?style=for-the-badge"/>
+</p>
 
 </div>
 
 ---
 
-<p align="center">
-  <img src="https://img.shields.io/badge/DARK-THEME-0d1117?style=for-the-badge&logo=github&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Linux-Advanced-black?style=for-the-badge&logo=linux"/>
-  <img src="https://img.shields.io/badge/Workflow-CLI%20-00ff99?style=for-the-badge&logo=gnubash&logoColor=black"/>
-  <img src="https://img.shields.io/badge/Python-Compiler%20Stack-yellow?style=for-the-badge&logo=python&logoColor=black"/>
-  <img src="https://img.shields.io/badge/Cryptography-XOR%20%7C%20RSA%20%7C%20DSA-red?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Swift-iOS%20Development-orange?style=for-the-badge&logo=swift&logoColor=white"/>
-  <img src="https://img.shields.io/badge/HTML-Markup%20Language-e34c26?style=for-the-badge&logo=html5&logoColor=white"/>
-  <img src="https://img.shields.io/badge/CSS-Styling%20Engine-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
-  <img src="https://img.shields.io/badge/JavaScript-Frontend%20Logic-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
-  <img src="https://img.shields.io/badge/TypeScript-Type%20Safe%20JS-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
-  <img src="https://img.shields.io/badge/React.js-Component%20UI-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
-  <img src="https://img.shields.io/badge/Next.js-Full%20Stack-black?style=for-the-badge&logo=next.js&logoColor=white"/>
-</p>
+## Contents
+
+- [About Me](#about-me)
+- [Tech and Stack](#tech-and-stack)
+- [Security Research](#security-research)
+- [Operating System Experience](#operating-system-experience)
+- [Python Compilation and Code Protection](#python-compilation-and-code-protection)
+- [Cryptography](#cryptography)
+- [Hosting and Environment](#hosting-and-environment)
+- [Contribution Streak](#contribution-streak)
+- [Contact](#contact)
+- [Fun Facts](#fun-facts)
 
 ---
 
-# About Me
+## About Me
 
-Hello! I'm **Giovani**, a passionate coder and security enthusiast who enjoys programming, building tools, and exploring systems.
+I'm Giovani, a penetration tester and software developer with over 6 years of experience across web app pentesting, web/software development, CLI development, exploit development, and system/server management. I work end-to-end: auditing applications for weaknesses, building the tools and fixes, and hardening the servers they run on.
 
-I like experimenting with Linux, customizing my environment, and optimizing workflows for performance and productivity. My main setup is **Kali Linux (custom)** for all activity — minimal, keyboard-driven, and optimized for speed.
+My daily driver is Kali Linux (custom): minimal, keyboard-driven, tuned for speed.
 
-I build **100+ CLI-first tools** — mostly in **Python, Go, and Bash** — designed to be **cross-platform (Windows / macOS / Linux)**, **multi-threaded**, and **low on CPU and memory**.
-
-I am also interested in **penetration testing and vulnerability research**, especially understanding how systems fail and how vulnerabilities appear in real-world applications.
-
-Things I enjoy doing:
-
-- Discovering vulnerabilities such as **SQL Injection (SQLi)**  
-- Finding **Cross-Site Scripting (XSS)** issues  
-- Testing **Remote Code Execution (RCE)** vectors  
-- Testing **SSRF, XXE, SSTI, LFI / RFI, and Path Traversal**  
-- Testing **IDOR, NoSQL Injection, and Auth issues**  
-- Identifying **server misconfigurations and insecure deployments**  
-- Performing **reconnaissance and attack surface mapping**  
-- Enumerating **subdomains, reverse IPs, DNS, WHOIS, and tech stacks**  
-- Conducting **OSINT and metadata forensics**  
-- Discovering **exposed credentials and sensitive configuration files**  
-- Building **CLI automation for GitHub, Telegram, Docker, and system ops**
-
-I often search for **credentials leaks across different frameworks and technologies**, not limited to `.env` files but also hosting panels, network protocols, and various configuration files used by many frameworks and applications.
-
-For every vulnerability or issue discovered, I enjoy writing **clear technical reports explaining the impact and reproduction steps** — PoC files, request / response evidence, remediation guidance, and structured JSON / HTML / TXT logs.
-
-Most of my workflow relies on **custom-built tools** that I develop myself for recon, scanning, vulnerability discovery, OSINT, automation, and system optimization.
+I created more than 150 CLI programs. Most use Python, Go, and Bash. They use low CPU and low memory but run fast. They use customized threads when needed. Builds work cross platform, with specific builds only for macOS when needed.
 
 ---
 
-# What I Build
+## Tech and Stack
 
-A quick map of my recent projects, grouped by what they actually do.
+### Languages
 
-### Security & Vulnerability Labs
+- Python
+- Bash
+- Go
+- Batch for Windows provisioning
+- JavaScript / TypeScript
+- HTML / CSS
+- React.js, Next.js
+- Swift
 
-- Scanners for **SQLi, XSS, SSRF, XXE, SSTI, LFI / RFI, Traversal, IDOR, and NoSQLi** with validation, confidence scoring, and WAF awareness  
-- `.env` and sensitive-file hunters with real-time progress and categorized `Result/` output  
-- Traffic interception proxies and header / misconfiguration checkers for manual testing  
-- VPS anomaly monitors with process forensics, GeoIP, and Telegram forensic alerts  
+### Build Targets and Tools
 
-### Recon, OSINT & Network
-
-- Target profilers: **ports, Cloudflare / WAF detection, real-IP discovery, DNS, WHOIS, SSL, CMS / framework fingerprinting**  
-- Subdomain and reverse-IP enumeration with multi-source OSINT, dedup, and retry logic  
-- Username search across dozens of platforms plus file-metadata forensics (EXIF / GPS, Office, PDF, media tags)  
-- Network mapping with ARP / ICMP sweeps, WiFi and CCTV discovery, latency / speed tracking  
-
-### Automation, GitHub & Data
-
-- GitHub managers for **repos, branches, gists, followers, stars, topics, and bulk archive / clone / delete flows**  
-- Pastebin / Gist / Mega.nz sync, upload-history tracking, and credential managers with connection checks  
-- Raw-data to JSON converters, README to caption / JSON / HTML catalog pipelines served via `raw.githubusercontent.com`  
-- File and archive ops: merge / split TXT, prefix lines, dummy CSV / SQL generation, ZIP / TAR / GZ extraction, OCR with Tesseract  
-
-### System, Docker & Terminal
-
-- Cleaners for **package caches, logs, temp files, browser cache, Docker prune, journals, and old kernels** with dry-run and per-category reports  
-- Hardening scripts with **SSH, Fail2Ban, WireGuard, UFW, sysctl, backups, and rollback**  
-- Docker managers (containers / images / volumes / networks / compose) plus desktop GUI and headless web modes  
-- Terminal setup engines (Zsh / Oh My Zsh / Powerlevel10k) and Python env managers with per-tool venvs and requirements auto-fix  
-
-### Media, Telegram & Privacy
-
-- Screen capture and recording with **FFmpeg**, batch screenshot flows, silent RAM-only daemons, and idle-triggered captures  
-- Video editing, GIF background removal, Drive downloads, and YouTube playlist / channel extraction  
-- Telegram delivery with **multi-bot support, album grouping, anti-flood pacing, retries, and README-derived captions**  
-- Proxy rotation / scraping and **Tor circuit rotation with Standard and Full-Anonymity iptables modes**  
+- VM and VPS builds for CLI development and testing
+- Cross platform CLI builds for Windows, macOS, and Linux
+- macOS-specific CLI builds when needed
+- Swift builds for Mac apps
+- Website builds with JavaScript / TypeScript, HTML / CSS, React.js, and Next.js
+- Python, Bash, and Go with per-tool venvs for CLI programs
+- Docker and compose for isolated runs
+- Git, GitHub, and Gists for code hosting and automation
+- Telegram Bot API for reports and file delivery
+- FFmpeg media handling and Tesseract OCR for text extraction
+- Tor and proxy networking for rotation in lab work
+- Lean terminal setups tuned for low memory and low CPU use
 
 ---
 
-# Operating System Experience
+## Security Research
 
-I work with multiple operating systems depending on the project or experiment.
+### Focus
 
-- **Kali Linux (Custom, Primary)** – main OS for all activity, development and security research  
-- **Fedora** – secondary OS with Hyprland setup  
-- **Arch Linux** – experimentation and learning system internals  
-- **Windows** – RDP testing and deployment tasks  
-- **VM Labs** – isolated environments for exploit testing and experiments  
+Web application security, vulnerability discovery, recon and enumeration, fingerprinting, OSINT and metadata forensics, username and credential intelligence, network discovery, exploit experiments in lab VMs, misconfiguration analysis, and credential exposure research.
 
-### Preferred Setup
+### Credential Exposure
 
-- **Kali Linux (Custom)** — minimal, customized, and optimized for all daily activity  
-- **Fedora + Hyprland** — secondary minimal setup
-
----
-
-# Technologies I Use
-
-### Programming & Scripting
-
-- Python  
-- Bash  
-- Go  
-- Batch (.bat for Windows provisioning)  
-- JavaScript / TypeScript  
-- HTML / CSS  
-- React.js  
-- Next.js  
-- Swift  
-
-### Tools & Platforms
-
-- CLI-first development  
-- Multi-threaded ThreadPool / goroutine engines  
-- Docker  
-- Git / GitHub  
-- GitHub Gists / API automation  
-- Pastebin  
-- Telegram Bot API  
-- FFmpeg media processing  
-- Tesseract OCR  
-- Tor / proxy networking  
-- PyQt6 / PySide6 desktop apps  
-- Flask + Tailwind for headless web modes  
-- Custom terminal environments  
-- System optimization and performance tuning  
-
----
-
-# Security Research & Pentesting
-
-I enjoy exploring how applications and systems behave under security testing — from first recon to validated PoC.
-
-### Focus Areas
-
-- Web Application Security  
-- Vulnerability Discovery  
-- Reconnaissance & Enumeration  
-- Subdomain & Reverse IP Enumeration  
-- Technology Fingerprinting  
-- OSINT & Metadata Forensics  
-- Username & Credential Intelligence  
-- Network Security & Discovery  
-- Exploit Experiments  
-- Misconfiguration Analysis  
-- Credential Exposure Discovery  
-
-### Common Vulnerabilities I Test
-
-- SQL Injection (SQLi)  
-- Cross-Site Scripting (XSS)  
-- Remote Code Execution (RCE)  
-- SSRF / XXE / SSTI  
-- LFI / RFI / Directory Traversal  
-- IDOR / NoSQL Injection  
-- Authentication / Authorization Issues  
-- Server Misconfigurations  
-- Security Misconfigurations  
-- Sensitive File Exposure  
-
-### Credential Discovery
-
-One area I enjoy researching is **exposed credentials in web applications**.
-
-This includes searching for sensitive configuration files used by various frameworks and technologies, such as:
-
-- `.env` files  
-- framework configuration files  
-- hosting panels (WHM / cPanel / Plesk / DirectAdmin)  
-- network protocols (FTP / SFTP / SSH / SMTP)  
-- backup files  
-- environment variables  
-- API keys and tokens  
-- database credentials  
-- cloud service credentials  
+I check beyond `.env`: framework configs, hosting panels such as WHM, cPanel, Plesk, and DirectAdmin, FTP/SFTP/SSH/SMTP configs, backup files, environment variables, API keys and tokens, database credentials, and cloud keys.
 
 ### Workflow
 
-1. Reconnaissance and target mapping  
-2. Subdomain / tech-stack fingerprinting and OSINT  
-3. Manual testing and fuzzing  
-4. Vulnerability discovery with re-validation  
-5. Credential and sensitive-file exposure checks  
-6. Exploit validation with evidence capture  
-7. Writing detailed vulnerability reports  
-
-Many parts of this process rely on **custom CLI tools that I build myself** — bulk scanners, wordlist-driven fuzzers, grid-based result views, and auto-saved evidence folders.
+1. Recon and target mapping
+2. Subdomain, stack fingerprinting, and OSINT
+3. Manual testing and fuzzing
+4. Discovery with re-validation
+5. Credential and sensitive-file checks
+6. Exploit validation with evidence capture
+7. Detailed report with impact and fix notes
 
 ---
 
-# Python Compilation & Code Protection
+## Operating System Experience
 
-I enjoy experimenting with **Python compilation and code protection**, combining learning and practical use — from building to breaking.
+- Kali Linux (Custom, Primary): development and security research, all daily activity
+- Fedora: secondary setup with Hyprland
+- Arch Linux: internals and experimentation
+- Windows: RDP testing and deployment tasks
+- VM Labs: isolated exploit testing and experiments
 
-Tools I frequently use:
-
-- **PyArmor** – Python code obfuscation  
-- **Nuitka** – compiling Python scripts into binaries  
-- **Cython** – compiling Python into C extensions  
-- **PyInstaller** – packaging scripts as standalone executables  
-- **License pipelines** – RSA / DSA tiers with anti-tamper and kill-switch handling  
-- **Deobfuscation lab** – Fernet / base64 / marshal unwrapping and PyInstaller bundle reversal without executing payloads  
-
-Typical workflow:
-
-1. Develop Python scripts  
-2. Optimize code structure  
-3. Compile or obfuscate scripts  
-4. Inject and verify licenses  
-5. Deploy or share via GitHub / Pastebin  
+Preferred: Kali Linux (Custom) for daily work, Fedora + Hyprland as secondary.
 
 ---
 
-# Cryptography & Security Experiments
+## Python Compilation and Code Protection
 
-I explore **practical cryptography** and lightweight encryption methods for learning and experimentation.
+- PyArmor for obfuscation
+- Nuitka for Python to binary builds
+- Cython for C extensions
+- PyInstaller for standalone executables
+- RSA/DSA license tiers with anti-tamper and kill-switch handling
+- Lab-only bundle analysis: Fernet, base64, and marshal unwrapping without payload execution
 
-Algorithms I experiment with:
-
-- **XOR Encryption** – simple obfuscation techniques  
-- **RSA** – public/private key encryption  
-- **DSA** – digital signatures and verification  
-
-Projects I enjoy building:
-
-- CLI encryption tools  
-- payload encoding/decoding utilities  
-- secure script distribution tools  
-- license signing, injection, and revocation flows  
-- HTML AES-256-GCM protection experiments  
-- code protection experiments  
+Build flow: develop, optimize structure, compile or obfuscate, inject and verify license, deploy.
 
 ---
 
-# Hosting & Development Environment
+## Cryptography
 
-- **GitHub** – project hosting and version control  
-- **GitHub Gists** – small code and data sharing  
-- **Pastebin** – quick code sharing  
-- **Mega.nz** – bulk data and asset sync  
-- **Telegram** – reports, alerts, and file delivery  
-- **Docker** – containerized environments  
-- **Netlify / Vercel** – web deployments  
-- **Windows RDP** – remote development/testing  
-- **Local VMs** – sandboxed testing labs  
+Research and utility scope only:
+
+- XOR for basic obfuscation tests
+- RSA for public/private key encryption
+- DSA for signatures and verification
+
+I build CLI encrypt/decrypt helpers, payload encode/decode utilities, license sign and revoke flows, AES-256-GCM HTML protection tests, and small code protection experiments.
 
 ---
 
-# Contribution Streak
+## Hosting and Environment
+
+GitHub for code, Gists for snippets, Pastebin for quick shares, Mega.nz for bulk sync, Telegram for alerts and delivery, Docker for isolated runs, Netlify and Vercel for web deploys, Windows RDP for remote testing, local VMs for sandbox work.
+
+---
+
+## Contribution Streak
 
 <div align="center">
 
@@ -277,40 +159,21 @@ Projects I enjoy building:
 
 ---
 
-# Community & Open Source
+## Contact
 
-I enjoy learning from the open-source community and experimenting with new tools and technologies.
+- GitHub: [nashzhee404](https://github.com/nashzhee404)
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Open%20Source-Enthusiast-brightgreen?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Linux-Custom%20Environment-black?style=for-the-badge&logo=linux"/>
-  <img src="https://img.shields.io/badge/CLI-Workflow-blue?style=for-the-badge"/>
-</p>
+For testing requests, include scope, authorization, and objective. I only test within authorized scope.
 
 ---
 
-# Favorite Quote
+## Fun Facts
 
-> "F*** you, Microsoft."  
-> — Linus Torvalds
-
----
-
-# Contact
-
-Email: [test@mail.ru](mailto:test@mail.ru)  
-Telegram: [@test](https://t.me/test)
-
----
-
-# Fun Facts
-
-- I build most of my tools as **CLI-first utilities**  
-- I focus on **multi-threaded, low-resource, cross-platform design**  
-- I enjoy **finding vulnerabilities and documenting them**  
-- I like **silent background modes, scheduled reports, and Telegram delivery** for long runs  
-- Minimal environments help me stay focused  
-- I prefer **custom tools over heavy frameworks**  
+- I create CLI programs mostly in a VM or on a VPS
+- I like building websites, Mac apps, and CLI tools
+- I build CLI tools as cross platform builds, plus specific builds only for macOS when needed
+- The programs I build are low memory usage, low CPU usage, lightweight but faster
+- I learn and do everything by myself, from writing the code to testing to deployment
 
 ---
 
