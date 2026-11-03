@@ -29,21 +29,6 @@ Penetration tester and software developer with 6+ years across web app pentestin
 
 ---
 
-## Contents
-
-- [About Me](#about-me)
-- [Tech and Stack](#tech-and-stack)
-- [Security Research](#security-research)
-- [Operating System Experience](#operating-system-experience)
-- [Python Compilation and Code Protection](#python-compilation-and-code-protection)
-- [Cryptography](#cryptography)
-- [Hosting and Environment](#hosting-and-environment)
-- [Contribution Streak](#contribution-streak)
-- [Contact](#contact)
-- [Fun Facts](#fun-facts)
-
----
-
 ## About Me
 
 I'm Giovani, a penetration tester and software developer with over 6 years of experience across web app pentesting, web/software development, CLI development, exploit development, and system/server management. I work end-to-end: auditing applications for weaknesses, building the tools and fixes, and hardening the servers they run on.
