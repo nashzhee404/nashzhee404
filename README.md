@@ -4,7 +4,7 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=30&pause=1000&color=00F7FF&center=true&vCenter=true&width=800&lines=Web+App+Pentesting;Software+Developer;Web+Developer;CLI+Development;Exploit+Development;System+%26+Server+Management" alt="Typing intro" />
 
-Penetration tester and software developer with 6+ years across web app pentesting, development, CLI development, exploit development, and server management.
+Penetration tester and software developer with 6+ years across web app pentesting, web development, CLI development, exploit development, and server management.
 
 <p>
   <img src="https://img.shields.io/badge/Python-Compiler%20Stack-yellow?style=for-the-badge&logo=python&logoColor=black"/>
@@ -50,7 +50,7 @@ I'm Giovani, a penetration tester and software developer with over 6 years of ex
 
 My daily driver is Kali Linux (custom): minimal, keyboard-driven, tuned for speed.
 
-I created more than 150 CLI programs. Most use Python, Go, and Bash. They use low CPU and low memory but run fast. They use customized threads when needed. Builds work cross platform, with specific builds only for macOS when needed.
+I have built more than 150 CLI programs. Most use Python, Go, and Bash. They are lightweight, low on CPU and memory, and fast. They use customized threads when needed. Builds work cross-platform, with specific builds only for macOS when needed.
 
 ---
 
@@ -69,17 +69,9 @@ I created more than 150 CLI programs. Most use Python, Go, and Bash. They use lo
 ### Build Targets and Tools
 
 - VM and VPS builds for CLI development and testing
-- Cross platform CLI builds for Windows, macOS, and Linux
-- macOS-specific CLI builds when needed
+- Cross-platform CLI builds for Windows, macOS, and Linux
 - Swift builds for Mac apps
 - Website builds with JavaScript / TypeScript, HTML / CSS, React.js, and Next.js
-- Python, Bash, and Go with per-tool venvs for CLI programs
-- Docker and compose for isolated runs
-- Git, GitHub, and Gists for code hosting and automation
-- Telegram Bot API for reports and file delivery
-- FFmpeg media handling and Tesseract OCR for text extraction
-- Tor and proxy networking for rotation in lab work
-- Lean terminal setups tuned for low memory and low CPU use
 
 ---
 
@@ -144,7 +136,7 @@ I build CLI encrypt/decrypt helpers, payload encode/decode utilities, license si
 
 ## Hosting and Environment
 
-GitHub for code, Gists for snippets, Pastebin for quick shares, Mega.nz for bulk sync, Telegram for alerts and delivery, Docker for isolated runs, Netlify and Vercel for web deploys, Windows RDP for remote testing, local VMs for sandbox work.
+GitHub for code, Gists for snippets, Pastebin for quick shares, Mega.nz for bulk sync, Telegram for alerts and delivery, Docker for isolated runs, VPS and web hosting for web deploys, Windows RDP for remote testing, local VMs for sandbox work.
 
 ---
 
@@ -161,8 +153,6 @@ GitHub for code, Gists for snippets, Pastebin for quick shares, Mega.nz for bulk
 ## Contact
 
 - GitHub: [nashzhee404](https://github.com/nashzhee404)
-- Email: [contact@pentestdev.com](mailto:contact@pentestdev.com)
-- Telegram: [pentestdev](https://t.me/pentestdev)
 
 For testing requests, include scope, authorization, and objective. I only test within authorized scope.
 
@@ -172,9 +162,9 @@ For testing requests, include scope, authorization, and objective. I only test w
 
 - I create CLI programs mostly in a VM or on a VPS
 - I like building websites, Mac apps, and CLI tools
-- I build CLI tools as cross platform builds, plus specific builds only for macOS when needed
-- The programs I build are low memory usage, low CPU usage, lightweight but faster
-- I learn and do everything by myself, from writing the code to testing to deployment
+- I build CLI tools as cross-platform builds, plus specific builds only for macOS when needed
+- The programs I build are lightweight, low on CPU and memory, yet fast
+- I handle everything myself, from writing the code to testing and deployment
 
 ---
 
